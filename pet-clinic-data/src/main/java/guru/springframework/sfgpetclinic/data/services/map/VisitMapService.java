@@ -6,7 +6,7 @@ import guru.springframework.sfgpetclinic.data.services.VisitService;
 import java.util.Set;
 
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
-    
+
     @Override
     public Set<Visit> findAll() {
         return super.findAll();
