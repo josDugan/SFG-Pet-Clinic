@@ -55,12 +55,14 @@ public class DataLoader implements CommandLineRunner {
         dentistry.setDescription("Dentistry");
         Specialty savedDentistry = specialtyService.save(dentistry);
 
-        Owner owner1 = new Owner();
-        owner1.setFirstName("Micheal");
-        owner1.setLastName("Weston");
-        owner1.setAddress("123 Brickerel");
-        owner1.setCity("Miami");
-        owner1.setTelephone("555-555-5555");
+        Owner owner1 = Owner
+                        .builder()
+                        .firstName("Michael")
+                        .lastName("Weston")
+                        .address("123 Brickerel")
+                        .city("Miami")
+                        .telephone("555-555-5555")
+                            .build();
 
         Pet mikesPet = new Pet();
         mikesPet.setName("Rosco");
@@ -71,12 +73,14 @@ public class DataLoader implements CommandLineRunner {
 
         ownerService.save(owner1);
 
-        Owner owner2 = new Owner();
-        owner2.setFirstName("Fiona");
-        owner2.setLastName("Glenarre");
-        owner2.setAddress("123 Brickerel");
-        owner2.setCity("Miami");
-        owner2.setTelephone("555-555-5555");
+        Owner owner2 = Owner
+                        .builder()
+                        .firstName("Fiona")
+                        .lastName("Glenarre")
+                        .address("123 Brickerel")
+                        .city("Miami")
+                        .telephone("555-555-5555")
+                            .build();
 
         Pet fionasPet = new Pet();
         fionasPet.setName("Just Cat");
