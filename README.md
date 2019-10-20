@@ -1,0 +1,1 @@
+[![CircleCI](https://circleci.com/gh/josDugan/SFG-Pet-Clinic/tree/master.svg?style=svg)](https://circleci.com/gh/josDugan/SFG-Pet-Clinic/tree/master)
