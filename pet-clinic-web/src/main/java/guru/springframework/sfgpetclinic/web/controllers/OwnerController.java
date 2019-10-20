@@ -22,4 +22,9 @@ public class OwnerController {
 
         return "owners/list";
     }
+
+    @RequestMapping("/owners/find")
+    public String findOwners() {
+        return "notimplemented";
+    }
 }
